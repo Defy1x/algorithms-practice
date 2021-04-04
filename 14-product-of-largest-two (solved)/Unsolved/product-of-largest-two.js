@@ -2,7 +2,8 @@
 
 var productOfLargestTwo = function(arr) {
   let num1 = Math.max(...arr)
-  console.log(num1)
-
-  
+  arr2 = arr.filter(item => item !== num1)
+  let num2 = Math.max(...arr2)
+  let result = num1 * num2
+  return result
 };
